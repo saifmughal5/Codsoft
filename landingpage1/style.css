@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #d0d4d5;
+}
+#nav{
+    width: 100%;
+    height: 110px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* You can adjust the shadow values to your preference */
+    
+}
+#nav img{   
+    height: 60px; 
+    margin-right: 200px; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    
+}
+#nav img:hover {
+    transform: scale(1.2); /* Scale the image up by 20% on hover (adjust to your preference) */
+    opacity: 0.8; /* Reduce the opacity on hover (adjust to your preference) */
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#nav-part1 h4{
+    margin-right: 90px;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#nav-part1 h4:hover{
+    color:#fff;
+}
+#nav-part1  h4:hover{
+    transform: scale(1.2); /* Scale the image up by 20% on hover (adjust to your preference) */
+    opacity: 0.8; /* Reduce the opacity on hover (adjust to your preference) */
+}
+
+#nav-part2 i{
+    margin-right: 90px;
+    font-size: 26px;
+    font-weight: 500;
+    
+    display: inline-block; /* or use "display: inline;" */
+    margin-right: 20px; /* Adjust the margin as needed to separate the icons. */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    
+}
+#nav-part2 i:hover{
+    transform: scale(1.2); /* Scale the image up by 20% on hover (adjust to your preference) */
+    opacity: 0.8; /* Reduce the opacity on hover (adjust to your preference) */   
+}
+
+#content {
+    width: 100%;
+    height: calc(100% - 110px); /* Added spaces around the '-' or nav k baad full page me jitne space ah ye cover kr leta ah  */
+    /* background-color: red;  this was for to make the div correct*/
+    position: relative;
+    display: flex;
+
+}
+#left{
+    width: 40%;
+    height: 100%;
+    /* background-color: blue; */
+    padding: 60px 85px;
+}
+#left h5{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #535353;
+}
+#left h1{
+   font-size: 95px;
+   margin-bottom: 10px;
+   line-height: 90px;
+   text-transform: uppercase;   
+}
+#left p{
+    font-size: 18px;
+      width: 70%;
+      margin-bottom: 20px;
+ }
+ #button{
+    background-color: #000;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 45px; 
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    text-transform: uppercase;
+    border: none;
+ }
+ #button:hover{
+    color: #fff;
+    background-color:#707072;
+    transition-duration: 0.4s;
+    transform: scale(1.1);
+ }
+#right{
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    position: relative;
+    padding: 50px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+/* 
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+} */
+.elem {
+    height: 540px;
+    width: 380px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .elem:hover {
+    background-color: #757c80; /* Change the background color on hover */
+    transform: scale(1.1); /* Add a slight scaling effect on hover */
+  }
+  
+
+.elem img{
+    height: 70%;
+    width: 100%;
+    top: 0%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+}
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #d0d4d5;
+    padding: 17px 34px;
+    border-radius: 6px;
+}
+.elem h5{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 17px 34px;
+    border-radius: 6px;
+}
+/* 2nd page  */
+#main1{
+    width: 100%;
+    height: 50%;
+    position:relative;
+    
+}
+#top{
+    width: 100%;
+    height: 100%;
+    /* background-color:blue; */
+}
+#top video{
+    height: 100%;
+    width: 100%;
+    /* z-index: -1; */
+    object-fit: cover;
+    position: relative;
+    object-position: center;
+    /* top: 0;
+    left: 0; */
+}
+
+/* bottom section css */
+#bottom{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    /* background-color:blue;  this is bottm main blue*/
+}
+
+#bone {
+    width: 25%;
+    height: 100%;
+    /* background-color: yellow; */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+
+}
+#bone :hover{
+    transform: scale(1.1);
+
+}
+
+
+#bone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#btwo{
+    width: 25%;
+    height: 100%;
+    /* background-color: green; */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    
+}
+#btwo :hover{
+    transform: scale(1.1);
+
+}
+#btwo img{
+    width: 100%;    
+     height: 100%;
+     object-fit: cover;
+}
+#bthree{
+    width: 25%;
+    height: 100%;
+    /* background-color: pink; */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    
+}
+#bthree :hover{
+    transform: scale(1.1);
+
+}
+#bthree img{
+    width: 100%;    
+    height: 100%;
+    object-fit: cover;
+}
+#bfour{
+    width: 25%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+        
+}
+#bfour :hover{
+    transform: scale(1.1);
+
+}
+#bfour img{
+    width: 100%;    
+    height: 100%;
+    object-fit: cover;
+}
+/* food section started */
+
+.food-section {
+    min-height: 600px;
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    background-color: #D0D4D5;
+
+    margin-top: 0px;
+    
+
+}
+
+.food-menu-title {
+    text-align: center;
+    margin-top: 0;
+    font-size: 5rem;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 900;
+    color:#000;
+    margin-bottom: 0rem;
+    font-family: gilroy;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 5rem;
+}
+
+.card {
+    min-width: 33.2%;
+    float: left;
+    min-height: 400px;
+    box-shadow: 0 4px 40px 0 black;
+    transition: 0.5s;
+    margin: 15px;
+    border-radius: 20px;
+}
+.card:hover {
+    box-shadow: 0 4px 8px 0 #3f3e3d;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.card img{
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 20px;
+}
+.card-details {
+    padding: 2px 16px;
+}
+.card-title {
+    color: black;
+    font-size: 2.5rem;
+    line-height: 1rem;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 25px;
+    margin-top: 35px;
+    font-family: gilroy;
+}
+.card-description {
+    color: black;
+    margin-bottom: 25px;
+}
+
+.food-section button {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    min-width: 10rem;
+    min-height: 3rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 2px;
+}
+.food-section button:hover {
+    background-color: #707072;
+    color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    transform: scale(1.1);
+}
+/* footer section */
+footer {
+    position: relative;
+    /* background-color: #757c80; */
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(117,124,128,1) 48%, rgba(0,0,0,1) 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 8px 8px #292928;
+    transition-duration: 0.4s;
+    margin-top: 340px;
+}
+footer:hover {
+    box-shadow: 4px 4px 8px 8px white;
+    transition-duration: 0.4s;
+
+}
+
+/* Logo styles */
+.footer-logo img {
+    margin-left: 60px;
+    width: 70px; /* Adjust the width as needed */
+    height: 70px;
+}
+
+
+/* Footer content styles */
+.footer-content {
+    text-align: right;
+    margin-right: 60px;
+}
+
+/* Hyperlink styles */
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Change link color on hover */
+.footer-content a:hover {
+    color: #f49d00; /* Change to your preferred link hover color */
+}
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+
+ @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  .bounce-left {
+	-webkit-animation: bounce-left 2.5s 3 both;
+	        animation: bounce-left 2.5s 3 both;
+}
+
+ @-webkit-keyframes bounce-left {
+    0% {
+      -webkit-transform: translateX(-48px);
+              transform: translateX(-48px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateX(-26px);
+              transform: translateX(-26px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateX(-13px);
+              transform: translateX(-13px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateX(-6.5px);
+              transform: translateX(-6.5px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateX(-4px);
+              transform: translateX(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  @keyframes bounce-left {
+    0% {
+      -webkit-transform: translateX(-48px);
+              transform: translateX(-48px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateX(-26px);
+              transform: translateX(-26px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateX(-13px);
+              transform: translateX(-13px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateX(-6.5px);
+              transform: translateX(-6.5px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateX(-4px);
+              transform: translateX(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  
