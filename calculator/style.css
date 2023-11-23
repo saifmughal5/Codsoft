@@ -15,6 +15,7 @@ body{
     align-items: center;
     /* background: linear-gradient(45deg,#0a0a0a,#3a4452 */
     background: #3A4764;  /* fallback for old browsers */
+    
 
 
     
@@ -52,10 +53,15 @@ button{
     margin: 10px;
     border-radius: 50%;
     background-color: #EAE3DC;
-    color: ;
     font-size: 25px;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
     cursor: pointer;
+}
+button:hover{
+    color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: all 1s ease;
 }
 .equalbtn{
     background-color: #D03F2F;
@@ -85,4 +91,18 @@ button{
             color: #fff;
             text-decoration: none;
           }
+          footer {
+            position: absolute;
+            color:white;
+            bottom: 0;
+            right: 20px;
+          }
+          .link {
+            color: #D03F2F;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .link:hover {
+            color: gray;
+          }          
          
